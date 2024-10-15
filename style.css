@@ -1,0 +1,33 @@
+html, body {
+    background-color: #f0f8ff;
+    height: 100%;
+    margin: 0;
+    font-family: monospace;
+}
+
+/* The main container should take up the remaining space */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* The main content should grow and take up available space */
+.content {
+    flex: 1;
+}
+
+/* The footer is placed at the bottom */
+footer {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    text-align: center;
+}
+
+.input-group {
+    width: 50%;
+    margin: auto;
+    margin-bottom: 5px;
+}

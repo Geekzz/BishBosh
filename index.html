@@ -1,12 +1,57 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Bish-Bosh 2.0</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-    <script>
+    <div class="wrapper">
+        <div class="content container">
+            <h1>Welcome to the Bish-Bosh game! </h1>
+            <h4>
+                This is a fun, interactive game where you can customize the rules
+                yourself. Simply enter two numbers — one for "Bish" and another for "Bosh." The game will then count
+                through a sequence of numbers, replacing any number divisible by your "Bish" number with the word
+                "Bish," and any number divisible by your "Bosh" number with the word "Bosh." If a number is divisible by
+                both, you'll see "Bish-Bosh!" Try it out by entering your own numbers below and watch the results update
+                automatically!
+            </h4>
+
+            <div class="input-group">
+                <span class="input-group-text">Bish</span>
+                <input type="number" id="bishInput" class="form-control" placeholder="Enter Bish number" aria-label="Bish amount">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">Bosh</span>
+                <input type="number" id="boshInput" class="form-control" placeholder="Enter Bosh number" aria-label="Bosh amount">
+            </div>
+
+            <div class="input-group">
+                <span class="input-group-text">Loop</span>
+                <input type="number" id="loopLimit" class="form-control" placeholder="Enter loop limit" aria-label="Loop amount">
+            </div>
+
+            <button class="btn btn-primary" id="startButton">Start Game</button>
+            <button class="btn btn-secondary" id="resetButton">Reset</button>
+
+            <div id="result" class="mt-3 mb-3"></div>
+        </div>
+        <footer>
+            <p>&copy; 2024 Johan Ahlsson. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <script src="bishbosh.js"></script>
+
+    <!-- <script>
         // Loopar från 0 till 99 (100 iterationer)
         for (var i = 1; i <= 100; i++) {
             if(i % 3 == 0 && i % 4 != 0) {
@@ -22,6 +67,7 @@
                 console.log(i);
             }
         }
-    </script>
+    </script> -->
 </body>
+
 </html>
