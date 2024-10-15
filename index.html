@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <script>
+        // Loopar från 0 till 99 (100 iterationer)
+        for (var i = 1; i <= 100; i++) {
+            if(i % 3 == 0 && i % 4 != 0) {
+                console.log('Bish');
+            }
+            else if(i % 3 != 0 && i % 4 == 0) {
+                console.log('Bash');
+            }
+            else if(i % 3 == 0 && i % 4 == 0) {
+                console.log('Bish-Bash');
+            }
+            else {
+                console.log(i);
+            }
+        }
+    </script>
+</body>
+</html>
